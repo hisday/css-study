@@ -12,15 +12,15 @@
 .content {
     background: cadetblue;
     grid-column: 1 / -2;
-    grid-row: 2 / -2;
+    grid-row: span 2;
 }
 
 .nav {
     background: cornflowerblue;
-    grid-row: 2 / -2;
+    grid-row: span 2;
 }
 
 .footer {
     background: yellowgreen;
-    grid-column: 1 / -1;
+    grid-column: span 4;
 }
