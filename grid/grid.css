@@ -1,18 +1,20 @@
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: [first-line] 100px [second-line] 100px [third-line] 100px [fourth-line] 100px [fifth-line];
+    grid-template-rows: [row-first] repeat(4, 100px [row-num]); /* first row skipped */
+    gap: 1px;
 }
 
 .header {
     background: darkkhaki;
-    grid-column: 1 / -1;
+    grid-column: first-line / fifth-line;
+    grid-row: row-first / row-num 1
 }
 
 .content {
     background: cadetblue;
-    grid-column: 1 / -2;
-    grid-row: span 2;
+    grid-column: first-line / fourth-line;
+    grid-row: row-num 1 / row-num 3;
 }
 
 .nav {
