@@ -1,16 +1,31 @@
-.wrapper {
+.grid {
     display: grid;
-    grid-template-columns: 250px 250px 250px;
-    grid-template-rows: 100px 50px 200px;
-    column-gap: 1px;
-    row-gap: 1px;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: 30px repeat(2, 100px) 30px;
+    grid-template-areas:
+        "header header header header"
+        "content content content nav"
+        "content content content nav"
+        "footer footer footer footer"
+    ;
 }
 
-.child {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: peru;
-    color: whitesmoke;
-    font-size: 50;
+.header {
+    background: darkkhaki;
+    grid-area: header;
+}
+
+.content {
+    background: cadetblue;
+    grid-area: content;
+}
+
+.nav {
+    background: cornflowerblue;
+    grid-area: nav;
+}
+
+.footer {
+    background: yellowgreen;
+    grid-area: footer;
 }
