@@ -10,7 +10,8 @@
 }
 
 .box {
-    width: 300;
+    /*width: 300;*/
+    flex-basis: 300;
     height: 150;
     display: flex;
     background: peru;
@@ -21,6 +22,7 @@
 }
 
 .box:nth-child(1) {
+    flex-grow: 1;
     flex-shrink: 4;
 }
 
@@ -31,7 +33,7 @@
 }
 
 .box:nth-child(3) {
-    flex-grow: 1;
+    flex-grow: 1.5;
     flex-shrink: 3;
     background: cadetblue;
 }
