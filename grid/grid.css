@@ -1,21 +1,28 @@
 .grid {
     display: grid;
-    height: 50vh;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template: 
+        "header header header header" 1fr
+        "content content content nav" 8fr
+        "footer footer footer footer" 1fr / 1fr 1fr 1fr 1fr;
+    height: 100vh;
 }
 
 .header {
     background: darkkhaki;
+    grid-area: header;
 }
 
 .content {
     background: cadetblue;
+    grid-area: content;
 }
 
 .nav {
     background: cornflowerblue;
+    grid-area: nav;
 }
 
 .footer {
     background: yellowgreen;
+    grid-area: footer;
 }
