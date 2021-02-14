@@ -1,0 +1,18 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+.child {
+    flex-basis: 30%;
+    height: 150;
+    display: flex;
+    background: peru;
+    color: powderblue;
+    font-size: 50;
+    justify-content: center;
+    align-items: center;
+}
