@@ -6,21 +6,21 @@
 
 .header {
     background: darkkhaki;
-    grid-column: 1 / 5;
+    grid-column: 1 / -1;
 }
 
 .content {
     background: cadetblue;
-    grid-column: 1 / 4;
-    grid-row: 2 / 4;
+    grid-column: 1 / -2;
+    grid-row: 2 / -2;
 }
 
 .nav {
     background: cornflowerblue;
-    grid-row: 2 / 4;
+    grid-row: 2 / -2;
 }
 
 .footer {
     background: yellowgreen;
-    grid-column: 1 / 5;
+    grid-column: 1 / -1;
 }
