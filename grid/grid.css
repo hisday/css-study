@@ -1,12 +1,10 @@
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    /* place-items: center stretch; */
-    /* place-items: end stretch; */
-    /* place-items: start stretch; */
-    place-items: stretch start;
-    height: 100vh;
+    background-color: chocolate;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 50px);
+    place-content: space-around start;
+    height: 500px;
 }
 
 .header {
